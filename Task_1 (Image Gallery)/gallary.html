@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images\icon.png.webp">
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images\Blackpearl.jpg" alt="Image 1" onclick="openLightbox(0)">
+            <p class="desc">Black Pearl</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\Deer.jpg" onclick="openLightbox(1)">
+            <p class="desc">Snow Deers</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\king-lion-fantasy-art.jpg" alt="Image 3" onclick="openLightbox(2)">
+            <p class="desc">Lion King</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\love.jpg" alt="Image 4" onclick="openLightbox(3)">
+            <p class="desc">Romantic Love</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\night.jpg" alt="Image 5" onclick="openLightbox(4)">
+            <p class="desc">Street night</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\nature.webp" alt="Image 6" onclick="openLightbox(5)">
+            <p class="desc">greenish nature</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\sad.jpeg" alt="Image 7" onclick="openLightbox(6)">
+            <p class="desc">A mann with sad</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\lion.avif" alt="Image 8" onclick="openLightbox(7)">
+            <p class="desc">The lions</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images\Teddy-Bear.jpg" alt="Image 9" onclick="openLightbox(8)">
+            <p class="desc">Teddy</p>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Large View">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
